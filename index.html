@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nysa Clark">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:image" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Tic-Tac-Toe</h1>
+    </header>
+
+    <main>
+        <section class="boxes">
+            <h3 id="playerText">Turn:</h3>
+            <div class="board">
+                <div onclick="startGame(0)" id="0" class="box"></div>
+                <div onclick="startGame(1)" id="1" class="box"></div>
+                <div onclick="startGame(2)" id="2" class="box"></div>
+                <div onclick="startGame(3)" id="3" class="box"></div>
+                <div onclick="startGame(4)" id="4" class="box"></div>
+                <div onclick="startGame(5)" id="5" class="box"></div>
+                <div onclick="startGame(6)" id="6" class="box"></div>
+                <div onclick="startGame(7)" id="7" class="box"></div>
+                <div onclick="startGame(8)" id="8" class="box"></div>
+            </div>
+        </section>
+
+        <section class="wins">
+            <h2>Wins</h2>
+            <div class="wins">
+                <div id="xWins">X - </div>
+                <div id="circleWins">O - </div>
+            </div>
+        </section>
+
+        <button onclick="resetGame()" id="resetButton" class="reset"><h2>Reset</h2></button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
